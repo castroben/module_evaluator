@@ -1,6 +1,6 @@
 # module_evaluator
 
-This repository contains a module evaluator system built using Java as a coding language and Maven as a build tool. The purpose of this system is to evaluate NPM modules by providing a url to its repository on github.com or on npmjs.com.
+This repository contains a module evaluator system built using Java as a coding language and Maven as a build tool. The repository contains a perl script used to obtain some of the statistics needed to evaluate the modules. This perl script can be found at http://cloc.sourceforge.net/.The purpose of this system is to evaluate NPM modules by providing a url to its repository on github.com or on npmjs.com.
 
 This system uses 5 metrics to evaluate a module:
   1. Bus factor score.
@@ -8,6 +8,10 @@ This system uses 5 metrics to evaluate a module:
   3. Correctness score.
   4. Ramp up score.
   5. License score.
+
+To obtain the scores, the system implements two main methods:
+  1. Request module information from Github's REST API.
+  2. Temporarily cloning and analyzing the module on the local machine.
 
 ### interface
 This repository contains an executable bash script labeled 'run'. There are 3 modes of operation for the system, and the mode of operation is specified in the parameter to the bash script.
