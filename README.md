@@ -30,5 +30,7 @@ URL NET_SCORE RAMP_UP_SCORE CORRECTNESS_SCORE BUS_FACTOR_SCORE RESPONSIVE_MAINTA
 In order for this system to work correctly, three enviroment variables must be set: LOG_LEVEL, LOG_FILE, GITHUB_TOKEN. Without these enviroment variables, the systems cannot output any useful information, therefore if the systems does not detect these environment variables, it will exit(1).
 
   LOG_FILE - this variable contains the full path of the file where all the logging statements will go.
+  
   LOG_LEVEL - specifies the verbosity level of the logs. 0-silent, 1-info, 2-debug.
+  
   GITHUB_TOKEN - Github personal access token used to make all the API calls needed to evaluate the modules.
