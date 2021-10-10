@@ -34,3 +34,5 @@ In order for this system to work correctly, three enviroment variables must be s
   LOG_LEVEL - specifies the verbosity level of the logs. 0-silent, 1-info, 2-debug.
   
   GITHUB_TOKEN - Github personal access token used to make all the API calls needed to evaluate the modules.
+  
+  In addition to this, perl must be installed in the local machine running this script. The appropriate environment variable must be set to be able to execure perl scripts with "perl <options> <perlscript>"
